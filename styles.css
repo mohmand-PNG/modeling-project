@@ -1,0 +1,147 @@
+/* Global Styles */
+
+body {
+  margin: 0;
+
+  padding: 0;
+
+  background-color: #000;
+
+  color: #fff;
+
+  font-family: "Poppins", sans-serif; /* Closest match */
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 100vh;
+}
+
+/* Portfolio Section */
+
+.portfolio {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  width: 90%;
+
+  max-width: 1200px;
+
+  padding: 50px 0;
+}
+
+/* Left Column */
+
+.left-column {
+  flex: 1;
+
+  padding-right: 50px;
+}
+
+.name {
+  font-size: 4rem;
+
+  font-weight: 500;
+
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 1rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  opacity: 0.8;
+}
+
+/* Right Column */
+
+.right-column {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.portfolio-image {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+/* Divider */
+
+.divider {
+  width: 90%;
+
+  max-width: 1200px;
+
+  border: 0.5px solid #aaa;
+
+  margin: 20px 0;
+}
+
+/* Description */
+
+.description {
+  text-align: left;
+
+  width: 90%;
+
+  max-width: 1200px;
+
+  font-size: 1.2rem;
+
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+  .portfolio {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .left-column {
+    padding-right: 0;
+  }
+
+  .right-column {
+    flex-direction: row;
+
+    gap: 10px;
+  }
+
+  .portfolio-image {
+    width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-image {
+    width: 100%;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
