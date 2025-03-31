@@ -519,3 +519,26 @@ body {
     align-items: center;
   }
 }
+
+/* the section appearance */
+/* Hide elements initially */
+h1,
+h2,
+h3,
+p,
+img,
+.image-container,
+.text-container,
+.about-text,
+.measurements,
+.contact-info {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When they appear */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}

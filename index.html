@@ -13,16 +13,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <!-- animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
     <section class="portfolio">
       <div class="left-column">
-        <h1 class="name">Daniel Gallego</h1>
+        <h1 class="name animate__animated animate__fadeInDown animate__slow">
+          Daniel Gallego
+        </h1>
       </div>
 
       <div class="right-column">
-        <div class="image-container">
+        <div
+          class="image-container animate__animated animate__slow animate__slideInRight"
+        >
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/161/265/original/The_Male_Directory.jfif?1742887467"
             alt="Model Image 1"
@@ -40,7 +49,9 @@
 
     <hr class="divider" />
 
-    <section class="description">
+    <section
+      class="description animate__animated animate__fadeInLeft animate__slow"
+    >
       <p class="subheading">Creative Portfolio</p>
       <p>
         I'm a model who can do both masculine and androgynous concepts. I feel
@@ -66,7 +77,7 @@
         </div>
 
         <div class="text-container">
-          <h2 class="about-heading">
+          <h2 class="about-heading" data-animate="animate__fadeInRight">
             ABOUT <span class="line"></span> <em>ME</em>
           </h2>
 
@@ -91,7 +102,7 @@
       <!-- Measurement Details -->
 
       <div class="measurements">
-        <div class="column">
+        <div class="column animate__slow" data-animate="animate__fadeInRight">
           <p><span>HEIGHT</span> 5'10"</p>
 
           <p><span>WAIST</span> 28"</p>
@@ -194,5 +205,6 @@
         </div>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
